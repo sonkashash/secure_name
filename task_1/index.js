@@ -5,10 +5,10 @@ console.log(encoded, translations);
 
 export const encodeFunc = (encoded, translations) => {
   const res = [];
+  const newMap = new Map();
+  const translationsMap = new Map();
 
   for (const obj of encoded) {
-    const newMap = new Map();
-    const translationsMap = new Map();
     const resObj = {};
 
     for (let key in obj) {
